@@ -7,6 +7,7 @@ body {
   font-size: 15px;
   --main-text-color: black;
   line-height: 1.5;
+  --main-padding: 0.5rem 1rem;
 }
 
 .navigation {
@@ -39,7 +40,7 @@ b {
 
 .links {
   font-size: 1rem;
-  padding: 0.5rem 1rem;
+  padding: var(--main-padding);
   color: var(--main-text-color);
 }
 
@@ -55,7 +56,9 @@ header {
   margin-right: auto;
 }
 
+
 .img {
+  display: flex;
   max-width: 1500px;
   width: 100%;
 }
@@ -68,4 +71,65 @@ header {
   font-size: 2.25rem;
   color: white;
   letter-spacing: inherit;
+}
+
+.logo {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: var(--main-padding);
+  color: rgba(255, 255, 255, .7);
+}
+
+.projects,
+.about {
+  padding: var(--main-padding);
+  max-width: 1564px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.segment {
+  padding: 2rem .5rem 2rem 1rem;
+}
+
+.segment-name {
+  font-style: inherit;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #ccc
+}
+
+.projects-cards-layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+
+}
+
+.project-card {
+  position: relative;
+  padding: 0 8px;
+}
+
+.project-title {
+  position: absolute;
+  top: 0;
+  left: 1;
+  padding: var(--main-padding);
+  background-color: black;
+  color: white;
+  display: inline-flex;
+}
+
+.projects-image {
+  max-width: 362.98px;
+  max-height: 241.73px;
+}
+
+.about-discription {
+  padding: var(--main-padding)
+}
+
+.employer-list {
+  display: flex;
 }
