@@ -57,8 +57,7 @@ header {
 }
 
 
-.img {
-  display: flex;
+.header-photo {
   max-width: 1500px;
   width: 100%;
 }
@@ -76,7 +75,11 @@ header {
 .logo {
   background-color: rgba(0, 0, 0, 0.7);
   padding: var(--main-padding);
-  color: rgba(255, 255, 255, .7);
+  color: rgba(255, 255, 255, .9);
+}
+
+.hide-title {
+  padding: 10px;
 }
 
 .projects,
@@ -99,12 +102,12 @@ header {
   border-bottom: 1px solid #ccc;
 }
 
+
+
 .projects-cards-layout {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 5px;
-
 }
 
 .project-card {
@@ -123,8 +126,7 @@ header {
 }
 
 .projects-image {
-  max-width: 362.98px;
-  max-height: 241.73px;
+  width: 100%;
 }
 
 .about-discription {
@@ -135,8 +137,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: var(--main-padding);
-  flex-wrap: wrap;
-  gap: 4px;
+  gap: 1rem;
   filter: grayscale(75%);
 }
 
@@ -144,14 +145,10 @@ header {
 .employer-card {
   display: flex;
   flex-direction: column;
-  max-width: 362.98px;
-  max
 }
 
 .employer-image {
-  max-width: 513.98px;
-  max-height: 341.66px;
-  min-width: 164px;
+  width: 100%;
 }
 
 h2 {
@@ -234,4 +231,61 @@ h2 {
 
 .powered-discription {
   margin: 15px 0;
+}
+
+
+
+@media screen and (max-width:1000px) {
+
+  .projects-cards-layout {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    width: 49%;
+  }
+
+
+  .employer-list {
+    flex-wrap: wrap;
+  }
+
+  .employer-card {
+    width: 49%;
+  }
+
+}
+
+
+@media screen and (max-width:600px) {
+
+  .projects-cards-layout {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+
+  .employer-list {
+    flex-wrap: wrap;
+  }
+
+  .employer-card {
+    width: 100%;
+  }
+
+
+
+  .about-links {
+    display: none;
+  }
+
+  .hide-title {
+    display: none;
+  }
+
 }
