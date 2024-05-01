@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Verdana, Tahoma, sans-serif;
   font-size: 15px;
   --main-text-color: black;
   line-height: 1.5;
@@ -80,7 +80,8 @@ header {
 }
 
 .projects,
-.about {
+.about,
+.contact {
   padding: var(--main-padding);
   max-width: 1564px;
   margin-left: auto;
@@ -95,7 +96,7 @@ header {
   font-style: inherit;
   font-size: 1.5rem;
   padding: 1rem 0;
-  border-bottom: 1px solid #ccc
+  border-bottom: 1px solid #ccc;
 }
 
 .projects-cards-layout {
@@ -127,9 +128,110 @@ header {
 }
 
 .about-discription {
-  padding: var(--main-padding)
+  padding: 1rem 0;
 }
 
 .employer-list {
   display: flex;
+  justify-content: space-between;
+  padding: var(--main-padding);
+  flex-wrap: wrap;
+  gap: 4px;
+  filter: grayscale(75%);
+}
+
+
+.employer-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 362.98px;
+  max
+}
+
+.employer-image {
+  max-width: 513.98px;
+  max-height: 341.66px;
+  min-width: 164px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.position,
+.position-duties {
+  font-family: Verdana, sans-serif;
+  margin: 15px 0;
+  font-size: 15px;
+}
+
+.position {
+  opacity: 0.6;
+}
+
+.contact-btn {
+  font-size: 15px;
+  font-family: Verdana, sans-serif;
+  padding: var(--main-padding);
+  border: none;
+  background-color: #f1f1f1;
+}
+
+
+.contact-btn:hover {
+  background-color: #cccc;
+}
+
+
+.contact-sgmt {
+  padding: 2rem .5rem 1rem;
+  ;
+}
+
+.input-wrapper {
+  padding: 1rem 0 0;
+}
+
+.contact-input {
+  margin: 1rem 0;
+  padding: 8px;
+  display: block;
+  border: none;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.first-input {
+  margin: 0;
+}
+
+.send-mssg-btn {
+  font-size: 15px;
+  margin: 1rem 0;
+  padding: var(--main-padding);
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.map-img {
+  padding-top: 1.5rem;
+  max-width: 100%;
+}
+
+.project-footer {
+  padding: 1rem 0;
+  font-size: 15px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+.powered-discription {
+  margin: 15px 0;
 }

@@ -14,7 +14,7 @@
         <div class="about-links">
           <a href="#projects" class="links">Projects</a>
           <a href="#about" class="links">About</a>
-          <a href="#contac" class="links">Contact</a>
+          <a href="#contact" class="links">Contact</a>
         </div>
       </div>
     </nav>
@@ -25,7 +25,7 @@
       </div>
     </header>
     <main>
-      <section class="projects">
+      <section id="projects" class="projects">
         <div class="segment"><p class="segment-name">Projects</p></div>
         <div class="projects-cards-layout">
           <div class="project-card">
@@ -94,56 +94,135 @@
           </div>
         </div>
       </section>
-      <section class="about">
-        <div class="segment"><p class="segment-name">About</p></div>
-        <p class="about-discription">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-          nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
+      <section id="about" class="about">
+        <div class="segment">
+          <p class="segment-name">About</p>
+          <p class="about-discription">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat
+            non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
         <div class="employer-list">
           <article class="employer-card">
-            <img src="" alt="" />
-            <h2>John Doe
-            </h2>
-            <span class="position">CEO & Founder</p>
-            <p class="position-duties" >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <img
+              src="./assets/images/team2.jpg"
+              alt="John Doe"
+              class="employer-image"
+            />
+            <h2>John Doe</h2>
+            <span class="position">CEO & Founder</span>
+            <p class="position-duties">
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
             <button class="contact-btn">Contact</button>
           </article>
           <article class="employer-card">
-            <img src="" alt="" />
-            <h2>Jane Doe
-            </h2>
-            <span class="position">Architect</p>
-            <p class="position-duties" >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <img
+              src="./assets/images/team1.jpg"
+              alt="Jane Doe"
+              class="employer-image"
+            />
+            <h2>Jane Doe</h2>
+            <span class="position">Architect</span>
+            <p class="position-duties">
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
             <button class="contact-btn">Contact</button>
           </article>
           <article class="employer-card">
-            <img src="" alt="" />
-            <h2>Mike Ross
-            </h2>
-            <span class="position">Architect</p>
-            <p class="position-duties" >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <img
+              src="./assets/images/team3.jpg"
+              alt="Mike Ross"
+              class="employer-image"
+            />
+            <h2>Mike Ross</h2>
+            <span class="position">Architect</span>
+            <p class="position-duties">
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
             <button class="contact-btn">Contact</button>
           </article>
           <article class="employer-card">
-            <img src="" alt="" />
-            <h2>Dan Star
-            </h2>
-            <span class="position">Architect</p>
-            <p class="position-duties" >Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <img
+              src="./assets/images/team4.jpg"
+              alt="Dan Star"
+              class="employer-image"
+            />
+            <h2>Dan Star</h2>
+            <span class="position">Architect</span>
+            <p class="position-duties">
+              Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse
+              sodales pellentesque elementum.
+            </p>
             <button class="contact-btn">Contact</button>
           </article>
         </div>
       </section>
-      <section></section>
+      <section id="contact" class="contact">
+        <div class="segment contact-sgmt">
+          <p class="segment-name">Contact</p>
+          <p class="about-discription">
+            Lets get in touch and talk about your next project.
+          </p>
+        </div>
+        <div class="input-wrapper">
+          <input
+            class="contact-input first-input"
+            type="text"
+            placeholder="Name"
+            required
+            name="Name"
+          />
+          <input
+            class="contact-input"
+            type="text"
+            placeholder="Email"
+            required
+            name="Email"
+          />
+          <input
+            class="contact-input"
+            type="text"
+            placeholder="Subject"
+            required
+            name="Subject"
+          />
+          <input
+            class="contact-input"
+            type="text"
+            placeholder="Comment"
+            required
+            name="Comment"
+          />
+          <button class="send-mssg-btn">Send Message</button>
+          <img class="map-img" src="./assets/images/map.jpg" alt="map" />
+        </div>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="project-footer">
+      <p class="powered-discription">
+        Desinged by
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          >W3School</a
+        >
+      </p>
+
+      <p class="powered-discription">
+        Powered by
+        <a href="https://t.me/v_ulianovskyi" target="_blank"
+          >Vasyl Ulianovskyi</a
+        >
+      </p>
+    </footer>
   </body>
 </html>
