@@ -129,6 +129,7 @@ header {
   width: 100%;
 }
 
+
 .about-discription {
   padding: 1rem 0;
 }
@@ -246,13 +247,12 @@ h2 {
     width: 49%;
   }
 
-
   .employer-list {
     flex-wrap: wrap;
   }
 
   .employer-card {
-    width: 49%;
+    width: 48%;
   }
 
 }
