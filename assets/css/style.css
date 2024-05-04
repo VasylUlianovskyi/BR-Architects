@@ -75,7 +75,8 @@ header {
 .logo {
   background-color: rgba(0, 0, 0, 0.7);
   padding: var(--main-padding);
-  color: rgba(255, 255, 255, .9);
+  color: rgba(255, 255, 255, .7);
+  font-weight: bolder;
 }
 
 .hide-title {
@@ -118,7 +119,6 @@ header {
 .project-title {
   position: absolute;
   top: 0;
-  left: 1;
   padding: var(--main-padding);
   background-color: black;
   color: white;
@@ -286,6 +286,8 @@ h2 {
 
   .hide-title {
     display: none;
+    font-size: 0;
+    padding: 0;
   }
 
 }
