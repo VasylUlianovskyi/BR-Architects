@@ -118,7 +118,7 @@ header {
 
 .project-title {
   position: absolute;
-  top: 0;
+  top: -10px;
   padding: var(--main-padding);
   background-color: black;
   color: white;
@@ -232,6 +232,10 @@ h2 {
 
 .powered-discription {
   margin: 15px 0;
+}
+
+.footer-link {
+  color: #ccc;
 }
 
 
